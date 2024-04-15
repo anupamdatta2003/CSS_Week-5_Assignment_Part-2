@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+
+        }
+        .card{
+            height: 300px;
+            width: 300px;
+            margin: 200px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: linear-gradient(
+            90deg,
+            rgba(69, 164, 221, 1) 11%,
+            rgba(51, 78, 194, 1) 100%,
+            rgba(233, 177, 140, 1) 100%);
+            padding: 30px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top>h1{
+            font-size: 25px;
+        }
+        .top>p{
+            color: #f0f8ff;
+            font-weight: 400;
+        }
+        .mid{
+            margin-top: 0;
+            padding: 10px;
+        }
+        .mid>h1{
+            font-size: 25px;
+        }
+        button{
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 5px;
+            border: 0;
+            font-weight: bold;
+            background: linear-gradient(
+            90deg,
+            rgba(69, 221, 219, 1) 11%,
+            rgba(51, 194, 91, 1) 100%,
+            rgba(233, 177, 140, 1) 100%
+            );
+        }
+        .card:hover{
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="top">
+            <h1>#01</h1>
+            <p>Created On : 01/01/2023</p>
+        </div>
+        <div class="mid">
+            <h1>Important dates</h1>
+            <ul>
+                <li>January 26 - Republic day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <button>Mark As Done</button>
+        </div>
+    </div>
+</body>
+</html>
